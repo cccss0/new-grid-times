@@ -45,6 +45,14 @@ const Abstract = styled.p`
   grid-area: abstract;
   font-size: 1rem;
   white-space: pre-wrap;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+
+  /* fix for lines showing below clamp due to grid layout */
+  align-self: start;
 `;
 
 export default SecondaryStory;
